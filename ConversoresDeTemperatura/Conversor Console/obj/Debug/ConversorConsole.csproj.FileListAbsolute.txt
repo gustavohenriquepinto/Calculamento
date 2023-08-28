@@ -1,0 +1,7 @@
+C:\Users\Gutvo\Desktop\Csharp\ConversoresDeTemperatura\Conversor Console\bin\Debug\Conversor Console.exe.config
+C:\Users\Gutvo\Desktop\Csharp\ConversoresDeTemperatura\Conversor Console\bin\Debug\Conversor Console.exe
+C:\Users\Gutvo\Desktop\Csharp\ConversoresDeTemperatura\Conversor Console\bin\Debug\Conversor Console.pdb
+C:\Users\Gutvo\Desktop\Csharp\ConversoresDeTemperatura\Conversor Console\obj\Debug\ConversorConsole.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Csharp\ConversoresDeTemperatura\Conversor Console\obj\Debug\ConversorConsole.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Csharp\ConversoresDeTemperatura\Conversor Console\obj\Debug\Conversor Console.exe
+C:\Users\Gutvo\Desktop\Csharp\ConversoresDeTemperatura\Conversor Console\obj\Debug\Conversor Console.pdb
