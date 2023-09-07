@@ -1,0 +1,7 @@
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraDeMatrizes\bin\Debug\CalculadoraDeMatrizes.exe.config
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraDeMatrizes\bin\Debug\CalculadoraDeMatrizes.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraDeMatrizes\bin\Debug\CalculadoraDeMatrizes.pdb
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraDeMatrizes\obj\Debug\CalculadoraDeMatrizes.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraDeMatrizes\obj\Debug\CalculadoraDeMatrizes.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraDeMatrizes\obj\Debug\CalculadoraDeMatrizes.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraDeMatrizes\obj\Debug\CalculadoraDeMatrizes.pdb
