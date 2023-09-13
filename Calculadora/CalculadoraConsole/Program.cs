@@ -11,16 +11,22 @@ namespace CalculadoraConsole
     {
         static void Main(string[] args)
         {
+            Inicio:
+            Console.Clear();
+            Console.WriteLine("==============\nCALCULADORA\n==============");
+
             #region Entrada
 
-            Console.WriteLine("Digite o primeiro valor:");
-            decimal n1 = Convert.ToDecimal(Console.ReadLine());
+            Console.Write("Digite o primeiro valor: ");
+            decimal n1 = decimal.Parse(Console.ReadLine());
 
-            Console.WriteLine("Qual das operações a seguir você deseja realizar?\n1- Adição\n2- Subtração\n3- Multiplicação\n4- Divisão\n5- Resto da Divisão\n6- Exponenciação");
-            byte operacao= Convert.ToByte(Console.ReadLine());
+            Retornar:
 
-            Console.WriteLine("Digite o segundo valor:");
-            decimal n2 = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("\nQual das operações a seguir você deseja realizar?\n'+'- Adição\n'-'- Subtração\n'*'- Multiplicação\n'/'- Divisão\n'%'- Resto da Divisão\n'&'- Exponenciação");
+            char operacao= char.Parse(Console.ReadLine());
+
+            Console.Write("\nDigite o segundo valor: ");
+            decimal n2 = decimal.Parse(Console.ReadLine());
 
             #endregion
 
@@ -28,21 +34,45 @@ namespace CalculadoraConsole
             decimal res = 0;
 
             switch(operacao){
-                case 1: res = n1 + n2; break;
-                case 2: res = n1 - n2; break;
-                case 3: res = n1 * n2; break;
-                case 4: res = n1 / n2; break;
-                case 5: res = n1 % n2; break;
-                case 6: res = (decimal)Math.Pow((double)n1, (double)n2); break;
-                default: Console.WriteLine("Os valores inseridos são inválidos"); break;
+                case '+': res = n1 + n2; break;
+                case '-': res = n1 - n2; break;
+                case '*': res = n1 * n2; break;
+                case '/': res = n1 / n2; break;
+                case '%': res = n1 % n2; break;
+                case '&': res = (decimal)Math.Pow((double)n1, (double)n2); break;
+                default: Console.WriteLine("\nA operação é inválida"); goto Continuar;
             }
 
             #endregion
 
             #region Saída
 
-            Console.WriteLine(res);
+            Console.WriteLine("\nO resultado da operação é: " + res);
 
+        #endregion
+
+            #region Encerramento
+
+            Continuar:
+
+            Console.Write("\nDeseja continuar calculando utilizando o resultado como parte da operação? (S/N): ");
+            char continuar = char.Parse(Console.ReadLine());
+
+            if (continuar == 's' || continuar == 'S')
+            {
+                n1 = res;
+                goto Retornar;
+            }
+            else
+            {
+                Console.Write("\nDeseja recomeçar? (S/N): ");
+                char inicio = char.Parse(Console.ReadLine());
+
+                if (inicio == 's' || inicio == 'S')
+                {
+                    goto Inicio;
+                }
+            }
             #endregion
         }
     }

@@ -5,3 +5,10 @@ C:\Users\Gutvo\Desktop\Csharp\Calculadoras\CalculadoraConsole\obj\Debug\Calculad
 C:\Users\Gutvo\Desktop\Csharp\Calculadoras\CalculadoraConsole\obj\Debug\CalculadoraConsole.csproj.CoreCompileInputs.cache
 C:\Users\Gutvo\Desktop\Csharp\Calculadoras\CalculadoraConsole\obj\Debug\CalculadoraConsole.exe
 C:\Users\Gutvo\Desktop\Csharp\Calculadoras\CalculadoraConsole\obj\Debug\CalculadoraConsole.pdb
+C:\Users\Gutvo\Desktop\Calculamento\Calculadora\CalculadoraConsole\bin\Debug\CalculadoraConsole.exe.config
+C:\Users\Gutvo\Desktop\Calculamento\Calculadora\CalculadoraConsole\bin\Debug\CalculadoraConsole.exe
+C:\Users\Gutvo\Desktop\Calculamento\Calculadora\CalculadoraConsole\bin\Debug\CalculadoraConsole.pdb
+C:\Users\Gutvo\Desktop\Calculamento\Calculadora\CalculadoraConsole\obj\Debug\CalculadoraConsole.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\Calculadora\CalculadoraConsole\obj\Debug\CalculadoraConsole.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\Calculadora\CalculadoraConsole\obj\Debug\CalculadoraConsole.exe
+C:\Users\Gutvo\Desktop\Calculamento\Calculadora\CalculadoraConsole\obj\Debug\CalculadoraConsole.pdb
