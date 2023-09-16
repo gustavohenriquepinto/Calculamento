@@ -10,6 +10,8 @@ namespace CalculadoraDeMatrizes
     {
         static void Main(string[] args)
         {
+            Matematica m = new Matematica();
+
             Inicio:
 
             Console.Clear();
@@ -26,12 +28,13 @@ namespace CalculadoraDeMatrizes
             colunasA = byte.Parse(Console.ReadLine());
 
             int[,] matrizA = new int[linhasA, colunasA];
+            
 
             for(int linhas = 0; linhas<linhasA; linhas++)
             {
                 for(int colunas = 0; colunas<colunasA; colunas++)
                 {
-                    Console.Write("Digite o valor de ["+linhas+","+colunas+"]");
+                    Console.Write("Digite o valor de ["+linhas+","+colunas+"]: ");
                     matrizA[linhas, colunas] = int.Parse(Console.ReadLine());
                 }
             }
