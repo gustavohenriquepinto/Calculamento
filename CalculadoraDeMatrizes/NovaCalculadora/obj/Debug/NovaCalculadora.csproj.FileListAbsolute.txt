@@ -1,0 +1,7 @@
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\bin\Debug\NovaCalculadora.exe.config
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\bin\Debug\NovaCalculadora.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\bin\Debug\NovaCalculadora.pdb
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\obj\Debug\NovaCalculadora.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\obj\Debug\NovaCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\obj\Debug\NovaCalculadora.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\obj\Debug\NovaCalculadora.pdb
