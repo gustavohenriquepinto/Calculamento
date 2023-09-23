@@ -1,0 +1,7 @@
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFibonacci\bin\Debug\CalculadoraFibonacci.exe.config
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFibonacci\bin\Debug\CalculadoraFibonacci.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFibonacci\bin\Debug\CalculadoraFibonacci.pdb
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFibonacci\obj\Debug\CalculadoraFibonacci.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFibonacci\obj\Debug\CalculadoraFibonacci.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFibonacci\obj\Debug\CalculadoraFibonacci.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFibonacci\obj\Debug\CalculadoraFibonacci.pdb

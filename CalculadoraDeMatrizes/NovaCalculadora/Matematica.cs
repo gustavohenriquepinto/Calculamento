@@ -42,30 +42,34 @@ namespace NovaCalculadora
                 }
             }
 
-            Console.WriteLine("\nA Matriz A é:");
-            for (int linhas = 0; linhas < linhasA; linhas++)
-            {
-                for (int colunas = 0; colunas < colunasA; colunas++)
-                {
-                    Console.Write("[" + matrizA[linhas, colunas] + "]");
-                    if (colunas == (colunasA - 1))
-                    {
-                        Console.WriteLine();
-                    }
-                }
-            }
+            Operacao();
 
-            Console.Write("\nIsso está correto? (\"Sim\" para continuar): ");
-            string matrizACorreta = Console.ReadLine();
+            #region Confirmação A
+            //Console.WriteLine("\nA Matriz A é:");
+            //for (int linhas = 0; linhas < linhasA; linhas++)
+            //{
+            //    for (int colunas = 0; colunas < colunasA; colunas++)
+            //    {
+            //        Console.Write("[" + matrizA[linhas, colunas] + "]");
+            //        if (colunas == (colunasA - 1))
+            //        {
+            //            Console.WriteLine();
+            //        }
+            //    }
+            //}
 
-            if (matrizACorreta == "sim" || matrizACorreta == "Sim")
-            {
-                Operacao();
-            }
-            else
-            {
-                Reiniciar();
-            }
+            //Console.Write("\nIsso está correto? (\"Sim\" para continuar): ");
+            //string matrizACorreta = Console.ReadLine();
+
+            //if (matrizACorreta == "sim" || matrizACorreta == "Sim")
+            //{
+            //    Operacao();
+            //}
+            //else
+            //{
+            //    Reiniciar();
+            //}
+            #endregion
 
         }
 
@@ -90,30 +94,32 @@ namespace NovaCalculadora
                 }
             }
 
-            Console.WriteLine("\nA Matriz B é:");
-            for (int linhas = 0; linhas < linhasB; linhas++)
-            {
-                for (int colunas = 0; colunas < colunasB; colunas++)
-                {
-                    Console.Write("[" + matrizB[linhas, colunas] + "]");
-                    if (colunas == (colunasB - 1))
-                    {
-                        Console.WriteLine();
-                    }
-                }
-            }
+            #region Confirmação B
+            //Console.WriteLine("\nA Matriz B é:");
+            //for (int linhas = 0; linhas < linhasB; linhas++)
+            //{
+            //    for (int colunas = 0; colunas < colunasB; colunas++)
+            //    {
+            //        Console.Write("[" + matrizB[linhas, colunas] + "]");
+            //        if (colunas == (colunasB - 1))
+            //        {
+            //            Console.WriteLine();
+            //        }
+            //    }
+            //}
 
-            Console.Write("\nIsso está correto? (\"Sim\" para continuar): ");
-            string matrizBCorreta = Console.ReadLine();
+            //Console.Write("\nIsso está correto? (\"Sim\" para continuar): ");
+            //string matrizBCorreta = Console.ReadLine();
 
-            if (matrizBCorreta == "sim" || matrizBCorreta == "Sim")
-            {
-                
-            }
-            else
-            {
-                Reiniciar();
-            }
+            //if (matrizBCorreta == "sim" || matrizBCorreta == "Sim")
+            //{
+
+            //}
+            //else
+            //{
+            //    Reiniciar();
+            //}
+            #endregion
 
         }
 
@@ -156,6 +162,9 @@ namespace NovaCalculadora
                     break;
                 case 6:
                     DivisaoNumeroReal();
+                    break;
+                case 7:
+                    MatrizTransposta();
                     break;
 
             } 
@@ -234,7 +243,6 @@ namespace NovaCalculadora
                 ApresentarMatrizC();
             }
         }
-
         public void SubtracaoMatrizes()
         {
             DefinirMatrizB();
@@ -261,7 +269,6 @@ namespace NovaCalculadora
                 ApresentarMatrizC();
             }
         }
-
         public void MultiplicacaoNumeroReal()
         {
             DefinirNumeroReal();
@@ -297,6 +304,22 @@ namespace NovaCalculadora
             }
             ApresentarMatrizC();
 
+        }
+        public void MatrizTransposta()
+        {
+            linhasC = colunasA;
+            colunasC = linhasA;
+            matrizC = new double[linhasC, colunasC];
+
+            for (int linhas = 0; linhas < linhasC; linhas++)
+            {
+                for (int colunas = 0; colunas < colunasC; colunas++)
+                {
+                    matrizC[linhas, colunas] = matrizA[colunas, linhas];
+                }
+            }
+
+            ApresentarMatrizC();
         }
 
         #endregion
