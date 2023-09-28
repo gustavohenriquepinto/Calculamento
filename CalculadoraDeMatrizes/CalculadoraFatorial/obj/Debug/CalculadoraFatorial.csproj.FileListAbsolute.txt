@@ -1,0 +1,7 @@
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFatorial\bin\Debug\CalculadoraFatorial.exe.config
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFatorial\bin\Debug\CalculadoraFatorial.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFatorial\bin\Debug\CalculadoraFatorial.pdb
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFatorial\obj\Debug\CalculadoraFatorial.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFatorial\obj\Debug\CalculadoraFatorial.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFatorial\obj\Debug\CalculadoraFatorial.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\CalculadoraFatorial\obj\Debug\CalculadoraFatorial.pdb
