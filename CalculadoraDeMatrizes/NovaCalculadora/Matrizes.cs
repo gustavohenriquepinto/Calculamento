@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NovaCalculadora
 {
-    internal class CalculadoraNova
+    internal class Matrizes
     {
         static void Main(string[] args)
         {

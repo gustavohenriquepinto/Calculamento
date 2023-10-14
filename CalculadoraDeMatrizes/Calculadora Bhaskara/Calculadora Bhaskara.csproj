@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11754ED1-1B1D-4666-BFEE-116D6AF8A5AE}</ProjectGuid>
+    <ProjectGuid>{D415CA79-D200-4F84-B321-20C3A31252A9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NovaCalculadora</RootNamespace>
-    <AssemblyName>NovaCalculadora</AssemblyName>
+    <RootNamespace>Calculadora_Bhaskara</RootNamespace>
+    <AssemblyName>Calculadora Bhaskara</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Matematica.cs" />
-    <Compile Include="Matrizes.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

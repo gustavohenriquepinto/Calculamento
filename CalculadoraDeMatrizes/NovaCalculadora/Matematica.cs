@@ -157,6 +157,9 @@ namespace NovaCalculadora
                 case 2:
                     SubtracaoMatrizes();
                     break;
+                case 3:
+                    MultiplicacaoMatrizes();
+                    break;
                 case 5:
                     MultiplicacaoNumeroReal();
                     break;
@@ -185,10 +188,10 @@ namespace NovaCalculadora
                     }
                 }
 
-            Console.WriteLine("\nDeseja realizar mais operações utilizando a matriz resultado? (\"Sim\" para continuar)");
+            Console.WriteLine("\nDeseja realizar mais operações utilizando a matriz resultado? (S/N)");
             string continuar = Console.ReadLine();
 
-            if (continuar == "sim" || continuar == "Sim")
+            if (continuar == "s" || continuar == "S")
             {
                 linhasA = linhasC;
                 colunasA = colunasC;
@@ -204,10 +207,10 @@ namespace NovaCalculadora
 
         public void Reiniciar() { 
 
-            Console.Write("\nVocê deseja reiniciar? (\"Sim\" para reiniciar)");
+            Console.Write("\nVocê deseja reiniciar? (S/N)");
             string reiniciar = Console.ReadLine();
 
-            if (reiniciar == "sim" || reiniciar == "Sim")
+            if (reiniciar == "s" || reiniciar == "S")
             {
                 Iniciar();
             }
@@ -267,6 +270,52 @@ namespace NovaCalculadora
                     }
                 }
                 ApresentarMatrizC();
+            }
+        }
+        public void MultiplicacaoMatrizes()
+        {
+            DefinirMatrizB();
+
+            linhasC = linhasA;
+            colunasC = colunasB;
+            matrizC = new double[linhasC, colunasC];
+
+            if (colunasA != linhasB)
+            {
+                Console.WriteLine("\nSó é possível realizar essa operação se o número de linhas da segunda matriz e o colunas da primeira for o mesmo.");
+                Reiniciar();
+            }
+            else
+            {
+                double[] elementosA = new double[colunasA];
+                double[] elementosB = new double[linhasB];
+                double[] elementosMultiplicados = new double[colunasA];
+
+                double somaElementos = 0;
+
+
+                for (int linhas = 0; linhas < linhasC; linhas++)
+                {
+                    for (int colunas = 0; colunas < colunasC; colunas++)
+                    {
+
+                        for (int i = 0; i < elementosA.Length; i++)
+                        {
+                            elementosA[i] = matrizA[linhas, i];
+                            elementosB[i] = matrizB[i, colunas];
+
+                            elementosMultiplicados[i] = elementosA[i] * elementosB[i];
+
+                            somaElementos += elementosMultiplicados[i];
+                        }
+
+                        matrizC[linhas, colunas] = somaElementos;
+
+                        somaElementos = 0;
+                    }
+                }
+                ApresentarMatrizC();
+
             }
         }
         public void MultiplicacaoNumeroReal()

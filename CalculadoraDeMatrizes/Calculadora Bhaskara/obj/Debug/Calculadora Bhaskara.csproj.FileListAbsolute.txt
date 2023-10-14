@@ -1,0 +1,7 @@
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\Calculadora Bhaskara\bin\Debug\Calculadora Bhaskara.exe.config
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\Calculadora Bhaskara\bin\Debug\Calculadora Bhaskara.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\Calculadora Bhaskara\bin\Debug\Calculadora Bhaskara.pdb
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\Calculadora Bhaskara\obj\Debug\Calculadora Bhaskara.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\Calculadora Bhaskara\obj\Debug\Calculadora Bhaskara.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\Calculadora Bhaskara\obj\Debug\Calculadora Bhaskara.exe
+C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\Calculadora Bhaskara\obj\Debug\Calculadora Bhaskara.pdb
