@@ -21,7 +21,7 @@ namespace NovaCalculadora
             DefinirMatrizA();
         }
 
-        public void DefinirMatrizA()
+        private void DefinirMatrizA()
         {
             Console.WriteLine("Defina o número de linhas e colunas da matriz A:");
 
@@ -73,7 +73,7 @@ namespace NovaCalculadora
 
         }
 
-        public void DefinirMatrizB()
+        private void DefinirMatrizB()
         {
            
             Console.WriteLine("\nDefina o número de linhas e colunas da matriz B:");
@@ -123,13 +123,13 @@ namespace NovaCalculadora
 
         }
 
-        public void DefinirNumeroReal()
+        private void DefinirNumeroReal()
         {
             Console.WriteLine("Defina um número real:");
             numeroReal = double.Parse(Console.ReadLine());
         }
 
-        public void Operacao()
+        private void Operacao()
         {
             Console.WriteLine("\nEscolha entre uma das operações abaixo:\n");
             Console.WriteLine("1- Adição de Matrizes");
@@ -150,7 +150,6 @@ namespace NovaCalculadora
                     Console.WriteLine("\nEssa operação não está disponível");
                     Reiniciar();
                     break;
-
                 case 1:
                     AdicaoMatrizes();
                     break;
@@ -169,11 +168,14 @@ namespace NovaCalculadora
                 case 7:
                     MatrizTransposta();
                     break;
+                case 8:
+                    MatrizInversa();
+                    break;
 
             } 
         }
 
-        public void ApresentarMatrizC()
+        private void ApresentarMatrizC()
         {
             Console.WriteLine("\nO resultado é:");
                 for (int linhas = 0; linhas < linhasC; linhas++)
@@ -205,7 +207,7 @@ namespace NovaCalculadora
             }
         }
 
-        public void Reiniciar() { 
+        private void Reiniciar() { 
 
             Console.Write("\nVocê deseja reiniciar? (S/N)");
             string reiniciar = Console.ReadLine();
@@ -220,7 +222,7 @@ namespace NovaCalculadora
 
         #region Operações
 
-        public void AdicaoMatrizes()
+        private void AdicaoMatrizes()
         {
             DefinirMatrizB();
 
@@ -246,7 +248,7 @@ namespace NovaCalculadora
                 ApresentarMatrizC();
             }
         }
-        public void SubtracaoMatrizes()
+        private void SubtracaoMatrizes()
         {
             DefinirMatrizB();
 
@@ -272,7 +274,7 @@ namespace NovaCalculadora
                 ApresentarMatrizC();
             }
         }
-        public void MultiplicacaoMatrizes()
+        private void MultiplicacaoMatrizes()
         {
             DefinirMatrizB();
 
@@ -318,7 +320,7 @@ namespace NovaCalculadora
 
             }
         }
-        public void MultiplicacaoNumeroReal()
+        private void MultiplicacaoNumeroReal()
         {
             DefinirNumeroReal();
 
@@ -336,7 +338,7 @@ namespace NovaCalculadora
                 ApresentarMatrizC();
 
         }
-        public void DivisaoNumeroReal()
+        private void DivisaoNumeroReal()
         {
             DefinirNumeroReal();
 
@@ -354,7 +356,7 @@ namespace NovaCalculadora
             ApresentarMatrizC();
 
         }
-        public void MatrizTransposta()
+        private void MatrizTransposta()
         {
             linhasC = colunasA;
             colunasC = linhasA;
@@ -370,7 +372,74 @@ namespace NovaCalculadora
 
             ApresentarMatrizC();
         }
+        private void MatrizInversa()
+        {
+            if (colunasA != linhasA)
+            {
+                Console.WriteLine("\nSó é possível realizar essa operação se o número de linhas colunas da primeira for o mesmo.");
+                Reiniciar();
+            }
+            else
+            {
+                linhasC = linhasA;
+                colunasC = colunasA;
+                matrizC = new double[linhasC, colunasC];
 
+                //Gerando a matriz estendida
+
+                double[,] matrizTemporaria = new double[linhasA, 2 * colunasA];
+
+                for (int linhas = 0; linhas < linhasA; linhas++)
+                {
+                    for (int colunas = 0; colunas < colunasA; colunas++)
+                    {
+                        matrizTemporaria[linhas, colunas] = matrizA[linhas, colunas];
+                        matrizTemporaria[linhas, colunas + colunasA] = linhas == colunas ? 1 : 0;
+                    }
+                }
+
+                // Aplicando a eliminação de Gaus Jordan
+
+                for(int linhas = 0; linhas < linhasA; linhas++)
+                {
+                    double referencial = matrizTemporaria[linhas, linhas];
+                    if (referencial == 0)
+                    {
+                        Console.WriteLine("\nNão é possível realizar a operação pois o determinante da matriz é 0.");
+                        Reiniciar();
+                    }
+
+                    for(int colunas = 0; colunas < 2 * colunasA; colunas++)
+                    {
+                        matrizTemporaria[linhas, colunas] /= referencial;
+                    }
+
+                    for (int k = 0; k < linhasA; k++)
+                    {
+                        if (k != linhas)
+                        {
+                            double fator = matrizTemporaria[k, linhas];
+                            for (int colunas = 0; colunas < 2 * colunasA; colunas++)
+                            {
+                                matrizTemporaria[k, colunas] -= fator * matrizTemporaria[linhas, colunas];
+                            }
+                        }
+                    }
+                }
+
+                // Extraindo a parte direita da matriz
+
+                for (int linhas = 0; linhas < linhasC; linhas++)
+                {
+                    for (int colunas = 0; colunas < colunasC; colunas++)
+                    {
+                        matrizC[linhas, colunas] = matrizTemporaria[linhas, (colunas + colunasA)];
+                    }
+                }
+
+                ApresentarMatrizC();
+            }
+        }
         #endregion
     }
 
