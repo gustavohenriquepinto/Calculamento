@@ -11,7 +11,7 @@ namespace NovaCalculadora
     {
         public byte linhasA, linhasB, linhasC, colunasA, colunasB, colunasC;
         public double[,] matrizA, matrizB, matrizC;
-        public double numeroReal;
+        public double numeroReal, determinante = 1;
 
         public void Iniciar()
         {
@@ -171,12 +171,17 @@ namespace NovaCalculadora
                 case 8:
                     MatrizInversa();
                     break;
+                case 9:
+                    Determinante();
+                    break;
+
 
             } 
         }
 
         private void ApresentarMatrizC()
         {
+
             Console.WriteLine("\nO resultado é:");
                 for (int linhas = 0; linhas < linhasC; linhas++)
                  {
@@ -387,14 +392,14 @@ namespace NovaCalculadora
 
                 //Gerando a matriz estendida
 
-                double[,] matrizTemporaria = new double[linhasA, 2 * colunasA];
+                matrizB = new double[linhasA, 2 * colunasA];
 
                 for (int linhas = 0; linhas < linhasA; linhas++)
                 {
                     for (int colunas = 0; colunas < colunasA; colunas++)
                     {
-                        matrizTemporaria[linhas, colunas] = matrizA[linhas, colunas];
-                        matrizTemporaria[linhas, colunas + colunasA] = linhas == colunas ? 1 : 0;
+                        matrizB[linhas, colunas] = matrizA[linhas, colunas];
+                        matrizB[linhas, colunas + colunasA] = linhas == colunas ? 1 : 0;
                     }
                 }
 
@@ -402,7 +407,7 @@ namespace NovaCalculadora
 
                 for(int linhas = 0; linhas < linhasA; linhas++)
                 {
-                    double referencial = matrizTemporaria[linhas, linhas];
+                    double referencial = matrizB[linhas, linhas];
                     if (referencial == 0)
                     {
                         Console.WriteLine("\nNão é possível realizar a operação pois o determinante da matriz é 0.");
@@ -411,17 +416,17 @@ namespace NovaCalculadora
 
                     for(int colunas = 0; colunas < 2 * colunasA; colunas++)
                     {
-                        matrizTemporaria[linhas, colunas] /= referencial;
+                        matrizB[linhas, colunas] /= referencial;
                     }
 
                     for (int k = 0; k < linhasA; k++)
                     {
                         if (k != linhas)
                         {
-                            double fator = matrizTemporaria[k, linhas];
+                            double fator = matrizB[k, linhas];
                             for (int colunas = 0; colunas < 2 * colunasA; colunas++)
                             {
-                                matrizTemporaria[k, colunas] -= fator * matrizTemporaria[linhas, colunas];
+                                matrizB[k, colunas] -= fator * matrizB[linhas, colunas];
                             }
                         }
                     }
@@ -433,13 +438,112 @@ namespace NovaCalculadora
                 {
                     for (int colunas = 0; colunas < colunasC; colunas++)
                     {
-                        matrizC[linhas, colunas] = matrizTemporaria[linhas, (colunas + colunasA)];
+                        matrizC[linhas, colunas] = matrizB[linhas, (colunas + colunasA)];
                     }
                 }
 
                 ApresentarMatrizC();
             }
         }
+        private void Determinante()
+        {
+            if (colunasA != linhasA)
+            {
+                Console.WriteLine("\nSó é possível realizar essa operação se o número de linhas colunas da primeira for o mesmo.");
+                Reiniciar();
+            }
+            else
+            {
+                while(linhasA > 1)
+                {
+                    for (int linhas = 0; linhas < linhasA; linhas++)
+                    {
+                        for (int colunas = 0; colunas < colunasA; colunas++)
+                        {
+                            Console.Write("[" + matrizA[linhas, colunas] + "]");
+                            if (colunas == (colunasA - 1))
+                            {
+                                Console.WriteLine();
+                            }
+                        }
+                    } 
+
+
+                    numeroReal = matrizA[0, 0];
+                    determinante *= Math.Pow(numeroReal, linhasA);
+
+                    Console.WriteLine("Determinnte: " + determinante);
+                    Console.WriteLine("numero Rel: " + numeroReal);
+
+                    for (int linhas = 0; linhas < linhasA; linhas++)
+                    {
+                        for (int colunas = 0; colunas < colunasA; colunas++)
+                        {
+                            matrizA[linhas, colunas] /= numeroReal;
+                        }
+                    }
+
+                    for (int linhas = 0; linhas < linhasA; linhas++)
+                    {
+                        for (int colunas = 0; colunas < colunasA; colunas++)
+                        {
+                            Console.Write("[" + matrizA[linhas, colunas] + "]");
+                            if (colunas == (colunasA - 1))
+                            {
+                                Console.WriteLine();
+                            }
+                        }
+                    }
+
+                    linhasB = (byte)(linhasA - 1);
+                    colunasB = (byte)(colunasA - 1);
+                    matrizB = new double[linhasB, colunasB];
+
+                    for (int linhas = 0; linhas < linhasB; linhas++)
+                    {
+                        for (int colunas = 0; colunas < colunasB; colunas++)
+                        {
+                            matrizB[linhas, colunas] -= (matrizA[(linhas + 1), 0] * matrizA[0, (colunas + 1)]);
+                        }
+                    }
+
+                    for (int linhas = 0; linhas < linhasB; linhas++)
+                    {
+                        for (int colunas = 0; colunas < colunasB; colunas++)
+                        {
+                            Console.Write("[" + matrizB[linhas, colunas] + "]");
+                            if (colunas == (colunasB - 1))
+                            {
+                                Console.WriteLine();
+                            }
+                        }
+                    }
+
+                    linhasA--;
+                    colunasA--;
+                    matrizA = matrizB;
+
+                    for (int linhas = 0; linhas < linhasA; linhas++)
+                    {
+                        for (int colunas = 0; colunas < colunasA; colunas++)
+                        {
+                            Console.Write("[" + matrizA[linhas, colunas] + "]");
+                            if (colunas == (colunasA - 1))
+                            {
+                                Console.WriteLine();
+                            }
+                        }
+                    }
+                }
+
+                determinante *= matrizA[0, 0];
+
+                Console.WriteLine("\nO resultado da operação é: " + determinante);
+                Reiniciar();
+
+            }
+        }
+
         #endregion
     }
 
