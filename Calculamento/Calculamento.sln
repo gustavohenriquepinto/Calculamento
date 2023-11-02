@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraFatorial", "Calc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora Bhaskara", "Calculadora Bhaskara\Calculadora Bhaskara.csproj", "{D415CA79-D200-4F84-B321-20C3A31252A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasesNumericas", "BasesNumericas\BasesNumericas.csproj", "{C5EF916D-BD6A-4096-BA7A-9A51CC9166A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D415CA79-D200-4F84-B321-20C3A31252A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D415CA79-D200-4F84-B321-20C3A31252A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D415CA79-D200-4F84-B321-20C3A31252A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5EF916D-BD6A-4096-BA7A-9A51CC9166A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5EF916D-BD6A-4096-BA7A-9A51CC9166A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5EF916D-BD6A-4096-BA7A-9A51CC9166A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5EF916D-BD6A-4096-BA7A-9A51CC9166A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

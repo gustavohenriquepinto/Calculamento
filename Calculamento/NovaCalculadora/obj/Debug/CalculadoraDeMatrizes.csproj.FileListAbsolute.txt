@@ -5,3 +5,7 @@ C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\obj\De
 C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\obj\Debug\CalculadoraDeMatrizes.csproj.CoreCompileInputs.cache
 C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\obj\Debug\NovaCalculadora.exe
 C:\Users\Gutvo\Desktop\Calculamento\CalculadoraDeMatrizes\NovaCalculadora\obj\Debug\NovaCalculadora.pdb
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NovaCalculadora\obj\Debug\CalculadoraDeMatrizes.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NovaCalculadora\obj\Debug\CalculadoraDeMatrizes.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NovaCalculadora\obj\Debug\NovaCalculadora.exe
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NovaCalculadora\obj\Debug\NovaCalculadora.pdb
