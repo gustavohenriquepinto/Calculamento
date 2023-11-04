@@ -1,0 +1,7 @@
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\BasesNumericas\bin\Debug\BasesNumericas.exe.config
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\BasesNumericas\bin\Debug\BasesNumericas.exe
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\BasesNumericas\bin\Debug\BasesNumericas.pdb
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\BasesNumericas\obj\Debug\BasesNumericas.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\BasesNumericas\obj\Debug\BasesNumericas.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\BasesNumericas\obj\Debug\BasesNumericas.exe
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\BasesNumericas\obj\Debug\BasesNumericas.pdb

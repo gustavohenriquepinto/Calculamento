@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5EF916D-BD6A-4096-BA7A-9A51CC9166A4}</ProjectGuid>
+    <ProjectGuid>{A4DCB410-ABE1-4C00-8EB3-5F75516EB810}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BasesNumericas</RootNamespace>
-    <AssemblyName>BasesNumericas</AssemblyName>
+    <RootNamespace>NumerosRomanos</RootNamespace>
+    <AssemblyName>NumerosRomanos</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

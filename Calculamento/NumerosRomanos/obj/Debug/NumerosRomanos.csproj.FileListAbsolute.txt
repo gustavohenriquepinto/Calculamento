@@ -1,0 +1,7 @@
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NumerosRomanos\bin\Debug\NumerosRomanos.exe.config
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NumerosRomanos\bin\Debug\NumerosRomanos.exe
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NumerosRomanos\bin\Debug\NumerosRomanos.pdb
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NumerosRomanos\obj\Debug\NumerosRomanos.csproj.AssemblyReference.cache
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NumerosRomanos\obj\Debug\NumerosRomanos.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NumerosRomanos\obj\Debug\NumerosRomanos.exe
+C:\Users\Gutvo\Desktop\Calculamento\Calculamento\NumerosRomanos\obj\Debug\NumerosRomanos.pdb
