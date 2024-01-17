@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraDeMatrizes", "NovaCalculadora\CalculadoraDeMatrizes.csproj", "{11754ED1-1B1D-4666-BFEE-116D6AF8A5AE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraFibonacci", "CalculadoraFibonacci\CalculadoraFibonacci.csproj", "{858FFC25-8B47-4F71-B9EB-61AC2CEC9B8D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraFatorial", "CalculadoraFatorial\CalculadoraFatorial.csproj", "{C0B42D0D-679A-4DAF-9899-D42E199BA5D7}"
@@ -15,16 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasesNumericas", "BasesNume
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumerosRomanos", "NumerosRomanos\NumerosRomanos.csproj", "{A4DCB410-ABE1-4C00-8EB3-5F75516EB810}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraMatrizes", "CalculadoraMatrizes\CalculadoraMatrizes.csproj", "{FA94CE68-3A74-459A-8BD7-AF5DC728CA9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{11754ED1-1B1D-4666-BFEE-116D6AF8A5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11754ED1-1B1D-4666-BFEE-116D6AF8A5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11754ED1-1B1D-4666-BFEE-116D6AF8A5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11754ED1-1B1D-4666-BFEE-116D6AF8A5AE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{858FFC25-8B47-4F71-B9EB-61AC2CEC9B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{858FFC25-8B47-4F71-B9EB-61AC2CEC9B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{858FFC25-8B47-4F71-B9EB-61AC2CEC9B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{A4DCB410-ABE1-4C00-8EB3-5F75516EB810}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4DCB410-ABE1-4C00-8EB3-5F75516EB810}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4DCB410-ABE1-4C00-8EB3-5F75516EB810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA94CE68-3A74-459A-8BD7-AF5DC728CA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA94CE68-3A74-459A-8BD7-AF5DC728CA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA94CE68-3A74-459A-8BD7-AF5DC728CA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA94CE68-3A74-459A-8BD7-AF5DC728CA9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

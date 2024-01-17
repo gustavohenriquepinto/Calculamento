@@ -1,0 +1,17 @@
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\bin\Debug\net7.0-windows\CalculatorApp.exe
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\bin\Debug\net7.0-windows\CalculatorApp.deps.json
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\bin\Debug\net7.0-windows\CalculatorApp.runtimeconfig.json
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\bin\Debug\net7.0-windows\CalculatorApp.dll
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\bin\Debug\net7.0-windows\CalculatorApp.pdb
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.formInicio.resources
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.formEntrar.resources
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.csproj.GenerateResource.cache
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.AssemblyInfoInputs.cache
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.AssemblyInfo.cs
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.dll
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\refint\CalculatorApp.dll
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.pdb
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\CalculatorApp.genruntimeconfig.cache
+C:\Users\Gutvo\OneDrive\Desktop\Calculamento\Calculamento\CalculatorApp\obj\Debug\net7.0-windows\ref\CalculatorApp.dll
